@@ -22,6 +22,10 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 
-colorscheme snazzy
+" colorscheme snazzy
+" colorscheme dracula
+" colorscheme molokai
+colorscheme gruvbox
 
-let mapleader="\<Space>"
+let g:mapleader='\<Space>'
+let g:maplocalleader=','

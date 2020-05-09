@@ -1,3 +1,9 @@
+" Basic {{{
+imap jk <ESC>
+nmap ; :
+
+" }}}
+
 " Tab Page {{{
 map <silent> te :tabe<CR>
 map <silent> tc :tabclose<CR>
