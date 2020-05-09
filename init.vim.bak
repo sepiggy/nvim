@@ -1,75 +1,9 @@
-" Plugins List {{{
-if &compatible
-	set nocompatible
-endif
 
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('~/.cache/dein')
-	call dein#begin('~/.cache/dein')
 
-	call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-
-	" Add or remove your plugins here like this:
-	"call dein#add('Shougo/neosnippet.vim')
-	"call dein#add('Shougo/neosnippet-snippets')
-	call dein#add('wsdjeg/dein-ui.vim')
-	call dein#add('connorholyday/vim-snazzy')
-	call dein#add('itchyny/lightline.vim')
-	call dein#add('psliwka/vim-smoothie')
-	call dein#add('simnalamburt/vim-mundo')
-	call dein#add('easymotion/vim-easymotion')
-	call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-	call dein#add('tyru/caw.vim')
-
-	call dein#end()
-	call dein#save_state()
-endif
-" }}}
-
-" General {{{
-filetype plugin indent on
-syntax enable
-syntax on
-augroup ft_vim
-	au!
-	au FileType vim setlocal foldmethod=marker
-augroup END
-
-set number
-set relativenumber
-set cursorline
-set wrap
-set showcmd
-set wildmenu
-set hlsearch
-exec "nohlsearch"
-set incsearch
-set ignorecase
-set smartcase
-set hidden
-set nobackup
-set nowritebackup
-set cmdheight=2
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
-
-"colorscheme snazzy
-let mapleader="\<Space>"
-" }}} General
 
 " Plugins Config {{{
-" lightline {{{
-let g:lightline = {
-			\ 'colorscheme': 'snazzy',
-			\ }
-" }}}
 
-" vim-mundo {{{
-set undofile
-set undodir=~/.config/nvim/undo
-" }}}
 
 " coc.nvim {{{
 function! s:check_back_space() abort
@@ -154,27 +88,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <silent> sl :set splitright<CR>:vsplit<CR>
-nmap <silent> sk :set nosplitbelow<CR>:split<CR>
-nmap <silent> sj :set splitbelow<CR>:split<CR>
-nmap <silent> sV <C-w>t<C-w>H
-nmap sH <C-w>t<C-w>K
 
-" tab
-map te :tabe<CR>
-map tc :tabclose<CR>
-map E :-tabnext<CR>
-map R :+tabnext<CR> 
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 
-map <up> :resize+5<CR>
-map <down> :resize-5<CR>
-map <left> :vertical resize+5<CR>
-map <right> :vertical resize+5<CR>
 
 
 
