@@ -134,9 +134,9 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " }}}
 
 " Defx {{{
-nnoremap <silent> <LocalLeader>e
+nnoremap <silent> fe
 	\ :<C-u>Defx -resume -toggle -buffer-name=tab`tabpagenr()`<CR>
-nnoremap <silent> <LocalLeader>a
+nnoremap <silent> fa
 	\ :<C-u>Defx -resume -buffer-name=tab`tabpagenr()` -search=`expand('%:p')`<CR>
 
 function! s:defx_mappings() abort
@@ -161,7 +161,7 @@ autocmd FileType defx call s:defx_mappings()
 " }}}
 
 " vim-buffet {{{
-nmap <leader>1 <Plug>BuffetSwitch(1)
+nmap 11 <Plug>BuffetSwitch(1)
 nmap <leader>2 <Plug>BuffetSwitch(2)
 nmap <leader>3 <Plug>BuffetSwitch(3)
 nmap <leader>4 <Plug>BuffetSwitch(4)
@@ -178,4 +178,15 @@ let g:asyncrun_open = 6
 let g:asynctasks_extra_config = [
 	\ '~/.config/asynctask/tasks.ini',
 	\]
+" }}}
+
+" vim-easymotion {{{
+nmap ee <Plug>(easymotion-bd-e)
+nmap ff <Plug>(easymotion-bd-f)
+nmap ww <Plug>(easymotion-bd-w)
+nmap \\ <Plug>(easymotion-bd-jk)
+" }}}
+
+" vim-mundo {{{
+nnoremap fu :MundoToggle<CR>
 " }}}

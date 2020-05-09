@@ -1,7 +1,19 @@
 " Basic {{{
 imap jk <ESC>
-nmap ; :
+nnoremap ; :
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <silent> S :w<CR>
+nnoremap <silent> q :q!<CR>
 
+map sv :source ~/.config/nvim/init.vim<CR>
+map <LEADER><CR> :nohlsearch<CR>
+" }}}
+
+" Edit {{{
+nmap ev :tabe ~/.config/nvim/init.vim<CR>
+nmap et :tabe ~/.config/asynctask/tasks.ini<CR>
+nmap ez :tabe ~/.zshrc<CR>
 " }}}
 
 " Tab Page {{{
@@ -19,13 +31,15 @@ map <silent> sj :set splitbelow<CR>:split<CR>
 map <silent> sV <C-w>t<C-w>H
 map <silent> sH <C-w>t<C-w>K
 
-map <silent> <C-h> <C-w>h
-map <silent> <C-j> <C-w>j
-map <silent> <C-k> <C-w>k
-map <silent> <C-l> <C-w>l
+map <silent> wh <C-w>h
+map <silent> wj <C-w>j
+map <silent> wk <C-w>k
+map <silent> wl <C-w>l
+map <silent> wo <C-w>o
 
 map <silent> <up> :resize+5<CR>
 map <silent> <down> :resize-5<CR>
 map <silent> <left> :vertical resize-5<CR>
 map <silent> <right> :vertical resize+5<CR>
 " }}}
+

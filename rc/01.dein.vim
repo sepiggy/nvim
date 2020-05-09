@@ -20,6 +20,30 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('simnalamburt/vim-mundo')
 	call dein#add('skywind3000/asynctasks.vim')
 	call dein#add('skywind3000/asyncrun.vim')
+	call dein#add('mg979/vim-visual-multi')
+	call dein#add('jiangmiao/auto-pairs')
+	call dein#add('machakann/vim-highlightedyank')
+	call dein#add('junegunn/vim-peekaboo')
+	call dein#add('Shougo/defx.nvim')
+	call dein#add('kristijanhusak/defx-icons')
+	call dein#add('Yggdroot/LeaderF')
+	" }}}
+
+	" Coding {{{
+	call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+	call dein#add('andymass/vim-matchup')
+	call dein#add('tyru/caw.vim')
+	call dein#add('kana/vim-textobj-user')
+	call dein#add('kana/vim-textobj-indent')
+	call dein#add('kana/vim-textobj-syntax')
+	call dein#add('kana/vim-textobj-entire')
+	call dein#add('kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] })
+	call dein#add('sgur/vim-textobj-parameter')
+	call dein#add('kana/vim-textobj-line')
+	call dein#add('y0za/vim-textobj-goexpr')
+	call dein#add('lucapette/vim-textobj-underscore')
+	call dein#add('glts/vim-textobj-comment')
+	call dein#add('vimtaku/vim-textobj-keyvalue')
 	" }}}
 
 	" Editor UI {{{
@@ -29,14 +53,9 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('itchyny/lightline.vim')
 	call dein#add('luochen1990/rainbow')
 	call dein#add('bagrat/vim-buffet')
+	call dein#add('liuchengxu/vim-which-key')
+	call dein#add('ryanoasis/vim-devicons')
 	" }}}
-
-	" Coding {{{
-	call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
-	call dein#add('tyru/caw.vim')
-	" }}}
-
-	call dein#add('Shougo/defx.nvim')
 
 	call dein#end()
 	call dein#save_state()
