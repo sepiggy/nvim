@@ -206,3 +206,5 @@ nmap gl :GV<CR>
 " }}}
 
 nmap gca :Gcommit -a -v<CR> 
+nmap gp :Git push<CR>
+nmap gs :G<CR>
