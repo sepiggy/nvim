@@ -6,6 +6,7 @@ endif
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state('~/.cache/dein')
+
 	call dein#begin('~/.cache/dein')
 
 	call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
@@ -15,6 +16,7 @@ if dein#load_state('~/.cache/dein')
 	" }}}
 
 	" Editor Enhance {{{
+	call dein#add('rhysd/accelerated-jk')
 	call dein#add('psliwka/vim-smoothie')
 	call dein#add('easymotion/vim-easymotion')
 	call dein#add('simnalamburt/vim-mundo')
@@ -52,9 +54,14 @@ if dein#load_state('~/.cache/dein')
 	" call dein#add('connorholyday/vim-snazzy')
 	call dein#add('itchyny/lightline.vim')
 	call dein#add('luochen1990/rainbow')
-	call dein#add('bagrat/vim-buffet')
+	call dein#add('hardcoreplayers/vim-buffet')
 	call dein#add('liuchengxu/vim-which-key')
 	call dein#add('ryanoasis/vim-devicons')
+	" }}}
+
+	" Version Control {{{
+	call dein#add('tpope/vim-fugitive')
+	call dein#add('junegunn/gv.vim')
 	" }}}
 
 	call dein#end()

@@ -184,9 +184,23 @@ let g:asynctasks_extra_config = [
 nmap ee <Plug>(easymotion-bd-e)
 nmap ff <Plug>(easymotion-bd-f)
 nmap ww <Plug>(easymotion-bd-w)
-nmap \\ <Plug>(easymotion-bd-jk)
+nmap \\ <Plug>(easymotion-bd-ijk)
 " }}}
 
 " vim-mundo {{{
 nnoremap fu :MundoToggle<CR>
+" }}}
+
+" Leaderf {{{
+nnoremap ft :Leaderf! file<CR>
+nnoremap fr :Leaderf! mru<CR>
+" }}}
+
+" accelerated-jk {{{
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
+" }}}
+
+" gv.vim {{{
+nmap gl :GV<CR>
 " }}}

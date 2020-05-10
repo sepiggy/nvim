@@ -4,7 +4,6 @@ nnoremap ; :
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap <silent> S :w<CR>
-nnoremap <silent> q :q!<CR>
 
 map sv :source ~/.config/nvim/init.vim<CR>
 map <LEADER><CR> :nohlsearch<CR>
@@ -36,6 +35,7 @@ map <silent> wj <C-w>j
 map <silent> wk <C-w>k
 map <silent> wl <C-w>l
 map <silent> wo <C-w>o
+map <silent> wq :q!<CR>
 
 map <silent> <up> :resize+5<CR>
 map <silent> <down> :resize-5<CR>
