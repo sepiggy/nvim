@@ -59,6 +59,10 @@ if dein#load_state('~/.cache/dein')
 	call dein#add('ryanoasis/vim-devicons')
 	" }}}
 
+	" Languages {{{
+	call dein#add('fatih/vim-go')
+	" }}}
+
 	" Version Control {{{
 	call dein#add('tpope/vim-fugitive')
 	call dein#add('junegunn/gv.vim')

@@ -204,3 +204,5 @@ nmap k <Plug>(accelerated_jk_gk)
 " gv.vim {{{
 nmap gl :GV<CR>
 " }}}
+
+nmap gca :Gcommit -a -v<CR> 
